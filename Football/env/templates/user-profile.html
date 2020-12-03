@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> User Profile </title>
+{% endblock %}
+
+{% block body %}
+<span> Welcome {{first_name}} {{last_name}} </span>
+<form action="/logout" method="PUT">
+    <a href="/login.html"> <button type="submit"> Log Out </button> </a>  <br>
+</form>
+
+<br>
+</n>
+
+<form action="/update-password" method="PUT">
+    <a href="/update-password.html "> <button type="submit"> Change Password </button> </a>  <br>
+
+</form>
+
+<form action="/delete-user" method="GET">
+    <a href="/login.html"> <button type="submit"> Delete Profile </button> </a>  <br>
+</form>
+
+<br>
+</n>
+
+{% endblock %}
